@@ -22,7 +22,7 @@ def solve(instance: Instance) -> Solution:
     start_time = time.time()
     savedSolution = []
     iterationWithoutGain = 0
-    t = 170
+    t = 300
     T = 1
     V = 30
 

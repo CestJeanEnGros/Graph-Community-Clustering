@@ -1,8 +1,27 @@
-# INF6102
-Graph Community Clustering :
+# Polytechnique Montréal - INF6102 : Graph Community Clustering 
 
-Given social network data from various regions, each represented as an undirected graph where nodes are individuals and edges indicate social relationships. The task is to partition each graph into cohesive groups of individuals (clusters), such that each person belongs to exactly one group, and members of the same group are directly connected (except for single-person groups).
+Given social network data from various regions, each represented as an undirected graph where nodes are individuals and edges indicate social relationships, the task is to partition each graph into cohesive groups of individuals (clusters) in order to maximize the modularity metric.
 
-The goal is to maximize the cohesion quality of your groupings — a score that reflects how strongly connected individuals are within each group compared to across different groups. High cohesion means your clusters are well-formed and socially meaningful, which makes them valuable for targeted market analysis.
+You can find two solvers :
+* random : solver_random.py : a random solver.
+* advanced : solver_advanced.py : an advanced implementation, full documentation in the Report PDF.
 
-Every usefull information (full description of the task, how to run, ...) are inside the Assignement pdf (french only sorry). The presentation and description of my implmentation can be read in the Report pdf (french only too).
+You can find a clear description of what was expected and how to run in the Assignement PDF and a succint report of my implementation in the Report PDF (both in french).
+
+## How to run
+
+To run a solver on an instance :
+```console
+$ python main.py --agent=(agent-name).py --infile=./instances/(instance-name).txt
+```
+
+## Visualization
+
+Visualization of a solution for the instance A :
+![Visualization of a solution for the instance A](img/instanceA.png)
+
+Visualization of a solution for the instance C :
+![Visualization of a solution for the instance C](img/instanceC.png)
+
+Visualization of a solution for the instance I :
+![Visualization of a solution for the instance I](img/instanceI.png)
